@@ -8,3 +8,7 @@ webserver::websites:
     index: 'C:\Inetpub\Website2\index.html'
     path: 'C:\Inetpub\Website2'
     indexname: 'index2.html'
+  www.website3.com:
+    index: 'C:\Inetpub\Website3\index.html'
+    path: 'C:\Inetpub\Website3'
+    indexname: 'index3.html'
