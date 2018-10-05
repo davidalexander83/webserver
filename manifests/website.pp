@@ -20,7 +20,7 @@ define webserver::website(
     require         => File[$path],
     bindings        => [
       {
-        'bindinginformation'   => "$website:80:",
+        'bindinginformation'   => "*:80:${website}",
         'protocol'             => 'http',
       },
     ]
