@@ -2,7 +2,7 @@ define webserver::website(
   String $website = $title,
   String $path,
   String $index,
-  String $name,
+  String $indexname,
 ){
   file { $path:
     ensure => directory,
@@ -10,7 +10,7 @@ define webserver::website(
 
   file { $index:
     ensure => file,
-    source => "puppet:///modules/webserver/${name}.html",
+    source => "puppet:///modules/webserver/${indexname}",
   }
   
   iis_site { $website:
