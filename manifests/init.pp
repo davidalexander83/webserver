@@ -1,7 +1,17 @@
 class webserver {
   # this module will manage my web server
 
-  file { "C:\\Inetpub\\website":
+  # file { "C:\\inetpub":
+  #  ensure => directory,
+  # }
+  
+ # file { "C:\\Inetpub\\website":
+ #   ensure => directory,
+ # }
+
+  $folders = ["C:\\Inetpub","C:\\Inetpub\\Website"]
+
+  file { $folders:
     ensure => directory,
   }
 
