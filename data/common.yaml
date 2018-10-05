@@ -1,10 +1,10 @@
 ---
 webserver::websites:
   www.website1.com:
-    index: 'C:/Inetpub/Website1/index.html'
-    path: 'C:/Inetpub/Website1'
+    index: 'C:\Inetpub\Website1\index.html'
+    path: 'C:\Inetpub\Website1'
     indexname: 'index1.html'
   www.website2.com:
-    index: 'C:/Inetpub/Website2/index.html'
-    path: 'C:/Inetpub/Website2'
+    index: 'C:\Inetpub\Website2\index.html'
+    path: 'C:\Inetpub\Website2'
     indexname: 'index2.html'
